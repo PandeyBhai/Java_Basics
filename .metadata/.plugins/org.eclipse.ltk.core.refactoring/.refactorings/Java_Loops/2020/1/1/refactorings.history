@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;if_Else&apos; to &apos;if_Else_switch&apos;&#x0D;&#x0A;- Original project: &apos;Java_Loops&apos;&#x0D;&#x0A;- Original element: &apos;Java_Loops/src/if_Else&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_Loops/src/if_Else_switch&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;if_Else&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;if_Else" name="if_Else_switch" qualified="false" references="true" stamp="1578171987143" textual="false" version="1.0"/>
+</session>
