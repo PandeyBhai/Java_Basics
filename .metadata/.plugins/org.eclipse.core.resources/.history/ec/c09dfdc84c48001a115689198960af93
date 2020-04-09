@@ -1,0 +1,22 @@
+package stringPractice;
+
+public class SubStringComparison {
+
+	
+	static String getSmallestAndLargest(String s, int k) {
+		String smallest = "";
+		String largest = "";
+		String[] subStrings_Of_k_Length = null;
+		for(int i=0;((2*k)<s.length());i++,k++) {
+			subStrings_Of_k_Length[i] = s.substring(i, k);
+			System.out.println(subStrings_Of_k_Length[i]);
+		}
+		return subStrings_Of_k_Length.toString();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		getSmallestAndLargest("HelloJava", 3);
+
+	}
+
+}

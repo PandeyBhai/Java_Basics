@@ -1,0 +1,14 @@
+package stringPractice;
+
+import java.util.Locale;
+
+public class CapitalizeEachWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "fuck you";
+		System.out.println(str.toUpperCase(Locale.ENGLISH));
+
+	}
+
+}

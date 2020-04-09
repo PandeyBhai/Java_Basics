@@ -1,0 +1,25 @@
+package stringPractice;
+
+public class CheckAnagramStrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1 = "lenevo";
+		char[] s1characters = s1.toCharArray();
+		String s2 = "envelo";
+		char[] s2characters = s2.toCharArray();
+		
+		for(int i=0;i<s1characters.length;i++) {
+			for(int j=0;j<s2characters.length;j++) {
+				if(s1characters[i]==s2characters[j]) {
+					System.out.println(s1characters[i]);
+					System.out.println(s2characters[j]);
+					continue;
+				}
+			}
+		}
+
+	}
+
+}
