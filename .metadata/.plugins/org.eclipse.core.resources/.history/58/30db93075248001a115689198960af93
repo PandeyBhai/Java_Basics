@@ -1,0 +1,31 @@
+package stringPractice;
+
+import java.util.Scanner;
+
+public class SubStringComparison {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int k = input.nextInt();
+		String s = input.next();
+		String smallest = " ";
+		String largest = " ";
+		String[] subStrings_Of_k_Length = new String[(s.length())-1];
+		for(int i=0;k+i<=s.length();i++) {
+			subStrings_Of_k_Length[i] = s.substring(i, k+i);
+			System.out.println(subStrings_Of_k_Length[i]);
+		}
+		smallest = subStrings_Of_k_Length[0];
+		for(int i=1;i<subStrings_Of_k_Length.length;i++) {
+			System.out.println(subStrings_Of_k_Length[i]);
+			if((subStrings_Of_k_Length[i].compareTo(smallest))<0) {
+				largest = smallest;
+				smallest = subStrings_Of_k_Length[i];
+			}
+		}
+		System.out.println("Smallest:" +smallest);
+		System.out.println("Largest:" +largest);
+	}
+
+}

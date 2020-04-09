@@ -1,0 +1,39 @@
+package stringPractice;
+
+import java.util.Scanner;
+
+public class PercentageShareInString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a String to find the percentage share of each datatype");
+		String s1 = input.nextLine();
+		int UpperCaseChars = 0;
+		int LowerCaseChars = 0;
+		int digits = 0;
+		int SpecialChars = 0;
+		
+		for(int i=0;i<s1.length();i++) {
+			if(Character.isUpperCase(s1.charAt(i))) {
+				UpperCaseChars++;
+			}
+			else if(Character.isLowerCase(s1.charAt(i))){
+				LowerCaseChars++;
+			}
+			else if(Character.isDigit(s1.charAt(i))) {
+				digits++;
+			}
+			else {
+				SpecialChars++;
+			}
+		}
+		System.out.println("Percentage Share of UpperCase Characters: "+((UpperCaseChars/s1.length())*100));
+		System.out.println("Percentage Share of LowerCase Characters: "+((LowerCaseChars/s1.length())*100));
+		System.out.println("Percentage Share of Integer Characters: "+((digits/s1.length())*100));
+		System.out.println("Percentage Share of Special Characters: "+((SpecialChars/s1.length())*100));
+
+	}
+
+}

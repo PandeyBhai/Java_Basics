@@ -1,0 +1,16 @@
+package stringPractice;
+
+import java.util.Scanner;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		StringBuffer OrginalString = new StringBuffer(input.next());
+		
+		System.out.println(OrginalString);
+
+	}
+
+}
